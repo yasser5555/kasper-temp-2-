@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="Boostrap/Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/normalize.Css" />
+    <link rel="stylesheet" href="Css/main/main.Css" />
+    <link rel="stylesheet" href="Css/main/media&Effect.Css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Page Info -->
+    <title>Kasper || template-2</title>
+    <link rel="icon" type="image/png" href="assets/images/logo/logo.png" />
+  </head>
+  <body>
+    <!-- ? header-section  -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo/logo.png" alt="Logo" height="30" />
+        </a>
+
+        <!-- Toggle Button for Mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Main Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active-link" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" target="_blank"
+                >Contact</a
+              >
+            </li>
+            <!-- Search -->
+            <li class="nav-item search-container">
+              <a
+                class="nav-link search-trigger"
+                href="#"
+                onclick="return false;"
+              >
+                <i class="fas fa-search search-icon"></i>
+              </a>
+              <form class="search-form">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Search here..."
+                  autocomplete="off"
+                />
+                <button type="submit" class="search-submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ? landing-section -->
+    <section id="landing">
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#mainCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bg-color="one">
+            <div class="carousel-content">
+              <h2>Creative Design Studio</h2>
+              <p>
+                We craft beautiful, functional websites that stand out from the
+                crowd.
+              </p>
+              <button class="btn btn-outline-light">View Our Work</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bg-color="two">
+            <div class="carousel-content">
+              <h2>Modern Solutions</h2>
+              <p>
+                Cutting-edge development paired with stunning visuals for your
+                brand.
+              </p>
+              <button class="btn btn-outline-light">Our Services</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bg-color="three">
+            <div class="carousel-content">
+              <h2>Award-Winning Agency</h2>
+              <p>
+                Trusted by clients worldwide to deliver exceptional digital
+                experiences.
+              </p>
+              <a
+                href="contact.html"
+                target="_blank"
+                class="btn btn-outline-light"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- services-article -->
+    <article class="article w-100">
+      <header data-aos="fade-left" class="article-header">
+        <h1 class="article-title">Services</h1>
+      </header>
+      <div class="container w-100">
+        <div class="row g-4">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="100"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="service-card">
+              <h3><i class="fas fa-desktop service-icon"></i>Web Design</h3>
+              <p>
+                Beautiful, responsive websites tailored to your brand and
+                business needs.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="service-card">
+              <h3>
+                <i class="fas fa-mobile-alt service-icon"></i>Mobile Development
+              </h3>
+              <p>
+                Native and cross-platform mobile apps with stunning user
+                experiences.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="service-card">
+              <h3>
+                <i class="fas fa-paint-brush service-icon"></i>Graphic Design
+              </h3>
+              <p>
+                Eye-catching visuals and branding that make your business stand
+                out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- ? services-section -->
+    <section id="services">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <!-- card-one -->
+            <div class="me-3" data-aos="fade-right" data-aos-delay="400">
+              <i class="fas fa-desktop fa-2x service-icon"></i>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="400">
+              <h5 class="fw-bold title">Vorem amet intuitive</h5>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex">
+            <!-- card-two -->
+            <div class="me-3" data-aos="fade-right" data-aos-delay="500">
+              <i class="fas fa-cog fa-2x service-icon"></i>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="500">
+              <h5 class="fw-bold title">Vorem amet intuitive</h5>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-6 d-flex">
+            <!-- card-three -->
+            <div class="me-3" data-aos="fade-right" data-aos-delay="600">
+              <i class="fas fa-tools fa-2x service-icon"></i>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="600">
+              <h5 class="fw-bold title">Vorem amet intuitive</h5>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-flex">
+            <div class="me-3" data-aos="fade-right" data-aos-delay="700">
+              <i class="fas fa-camera fa-2x service-icon"></i>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="700">
+              <h5 class="fw-bold title">Vorem amet intuitive</h5>
+              <p>
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ? features-section -->
+    <section id="features" class="w-100">
+      <div class="container-fluid py-2">
+        <div class="row h-100 g-2">
+          <div
+            class="side d-flex col-12 col-md-6 align-items-center justify-content-center"
+          >
+            <img
+              data-aos="fade-right"
+              data-aos-delay="100"
+              src="assets/images/features-section/mobile.png"
+              alt="features-bg"
+              class="img-fluid my-3"
+            />
+          </div>
+          <div
+            class="side col-12 col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="side-content w-100 my-3">
+              <h2 data-aos="fade-right" data-aos-delay="100">
+                Our Design Comes With...
+              </h2>
+              <ul data-aos="fade-right" data-aos-delay="200">
+                <li data-aos="fade-right" data-aos-delay="300">
+                  Responsive Design
+                </li>
+                <li data-aos="fade-right" data-aos-delay="400">
+                  Modern Design
+                </li>
+                <li data-aos="fade-right" data-aos-delay="500">Clean Code</li>
+                <li data-aos="fade-right" data-aos-delay="600">
+                  Browser Friendly
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  portofolio-article -->
+    <article class="article w-100">
+      <header data-aos="fade-left" class="article-header">
+        <h1 class="article-title">Portfolio</h1>
+      </header>
+      <div class="container w-100">
+        <div class="row g-4">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="100"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="service-card">
+              <h3>
+                <i class="fas fa-laptop-code service-icon"></i>E-Commerce
+                Website
+              </h3>
+              <p>
+                A full-featured online store with secure payment integration and
+                inventory management.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="service-card">
+              <h3><i class="fas fa-mobile-alt service-icon"></i>Fitness App</h3>
+              <p>
+                Cross-platform mobile application for tracking workouts and
+                nutrition goals.
+              </p>
+            </div>
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="service-card">
+              <h3>
+                <i class="fas fa-paint-brush service-icon"></i>Brand Identity
+              </h3>
+              <p>
+                Complete brand redesign including logo, color scheme, and
+                marketing materials.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- ? portofolio-section -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title">Our Portfolio</h2>
+            <ul
+              class="nav nav-tabs justify-content-center"
+              id="portfolioTabs"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="all-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#all"
+                  type="button"
+                  role="tab"
+                  aria-controls="all"
+                  aria-selected="true"
+                >
+                  All
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="web-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#web"
+                  type="button"
+                  role="tab"
+                  aria-controls="web"
+                  aria-selected="false"
+                >
+                  Web
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="app-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#app"
+                  type="button"
+                  role="tab"
+                  aria-controls="app"
+                  aria-selected="false"
+                >
+                  App
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="graphic-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#graphic"
+                  type="button"
+                  role="tab"
+                  aria-controls="graphic"
+                  aria-selected="false"
+                >
+                  Graphic
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="portfolioTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="all"
+                role="tabpanel"
+                aria-labelledby="all-tab"
+              >
+                <div class="row g-4">
+                  <!-- First Row -->
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="portfolio-item" data-aos="fade-up">
+                      <img
+                        src="assets/images/shuffle/shuffle-01.jpg"
+                        alt="Portfolio 1"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-02.jpg"
+                        alt="Portfolio 2"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-03.jpg"
+                        alt="Portfolio 3"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-04.jpg"
+                        alt="Portfolio 4"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Second Row -->
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-05.jpg"
+                        alt="Portfolio 5"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-06.jpg"
+                        alt="Portfolio 6"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="600"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-07.jpg"
+                        alt="Portfolio 7"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="700"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-08.jpg"
+                        alt="Portfolio 8"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="web"
+                role="tabpanel"
+                aria-labelledby="web-tab"
+              >
+                <div class="row g-4">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="portfolio-item" data-aos="fade-up">
+                      <img
+                        src="assets/images/shuffle/shuffle-04.jpg"
+                        alt="Portfolio 4"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-05.jpg"
+                        alt="Portfolio 5"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="app"
+                role="tabpanel"
+                aria-labelledby="app-tab"
+              >
+                <div class="row g-4">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="portfolio-item" data-aos="fade-up">
+                      <img
+                        src="assets/images/shuffle/shuffle-06.jpg"
+                        alt="Portfolio 6"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div
+                      class="portfolio-item"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <img
+                        src="assets/images/shuffle/shuffle-07.jpg"
+                        alt="Portfolio 7"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="graphic"
+                role="tabpanel"
+                aria-labelledby="graphic-tab"
+              >
+                <div class="row g-4">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="portfolio-item" data-aos="fade-up">
+                      <img
+                        src="assets/images/shuffle/shuffle-08.jpg"
+                        alt="Portfolio 8"
+                        class="img-fluid"
+                      />
+                      <div class="portfolio-overlay">
+                        <h3>Awesome Image</h3>
+                        <p>Photography</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <button
+            class="my-5 btn btn-primary portfolio-more-btn"
+            data-aos="fade-up"
+          >
+            <span>More</span>
+            <i class="fas fa-arrow-right ms-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ? video-section -->
+    <section class="mt-5" id="video">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title" data-aos="fade-left">
+              super awesome video here
+            </h2>
+            <p data-aos="fade-right" data-aos-dealy="200">it's all you need</p>
+            <button
+              class="btn black-btn"
+              data-aos="fade-in"
+              data-aos-dealy="400"
+            >
+              see more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  about-article -->
+    <article class="article w-100">
+      <header data-aos="fade-left" class="article-header">
+        <h1 class="article-title">About Us</h1>
+        <p class="article-meta">Learn more about our creative team</p>
+      </header>
+      <div class="container w-100">
+        <div class="row g-4">
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <div class="about-icons container">
+              <!-- ! Row-1 -->
+              <div class="row">
+                <div class="icon-circle col-6">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="icon-circle col-6">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+              </div>
+              <!-- ! Row-2 -->
+              <div class="row my-5">
+                <div class="icon-circle col-6">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="icon-circle col-6">
+                  <i class="fas fa-rocket"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div class="about-content">
+              <h2>Who We Are</h2>
+              <p>
+                We are a passionate team of creative professionals dedicated to
+                bringing your digital vision to life. With years of experience
+                in web design, development, and digital marketing, we create
+                stunning solutions that help businesses grow.
+              </p>
+              <div class="about-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Expert Team</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Creative Solutions</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Quality Service</span>
+                </div>
+              </div>
+              <div class="about-stats row text-start">
+                <div class="stat-item col-md-4 col-sm-6">
+                  <h3><span class="counter" data-target="150">0</span>+</h3>
+                  <p>Projects Completed</p>
+                </div>
+                <div class="stat-item col-md-4 col-sm-6">
+                  <h3><span class="counter" data-target="50">0</span>+</h3>
+                  <p>Happy Clients</p>
+                </div>
+                <div class="stat-item col-md-4 col-sm-6">
+                  <h3><span class="counter" data-target="5">0</span>+</h3>
+                  <p>Years Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- ? about-section -->
+    <section
+      id="about"
+      class="vh-100 d-flex justify-content-center flex-column"
+    >
+      <div class="row g-0">
+        <div class="container d-flex justify-content-center">
+          <img
+            src="./assets/images/about/about.png"
+            alt="bad-internet"
+            class="img-fluid about-img"
+          />
+        </div>
+      </div>
+      <div class="row g-0">
+        <div
+          class="container-fluid py-5 col-md-12 w-100 d-flex align-items-center"
+        >
+          <div
+            class="container rounded w-100 px-5 h-sm-100 h-md-100 h-lg-50 my-5 d-flex align-items-center justify-content-center"
+          >
+            <div class="container">
+              <div class="row g-sm-4">
+                <!-- ! col-1 -->
+                <div class="col-12 col-sm-12 col-md-3 text-center">
+                  <i
+                    data-aos="fade-right"
+                    class="fa-solid fa-mug-hot text-white bg-black p-2 rounded-circle my-3"
+                  ></i>
+                  <h1
+                    class="text-white fs-1"
+                    data-aos="fade-left"
+                    data-aos-delay="800"
+                  >
+                    1.236
+                  </h1>
+                  <p
+                    class="text-white text-capitalize"
+                    data-aos="fade-right"
+                    data-aos-delay="1600"
+                  >
+                    coffee-drinks
+                  </p>
+                </div>
+                <!-- ! col-2 -->
+                <div class="col-12 col-sm-12 col-md-3 text-center">
+                  <i
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                    class="fa-regular fa-folder text-white bg-black p-2 rounded-circle my-3"
+                  ></i>
+                  <h1
+                    class="text-white fs-1"
+                    data-aos="fade-left"
+                    data-aos-delay="1000"
+                  >
+                    256
+                  </h1>
+                  <p
+                    class="text-white text-capitalize"
+                    data-aos="fade-right"
+                    data-aos-delay="1800"
+                  >
+                    completed-project
+                  </p>
+                </div>
+                <!-- ! col-3 -->
+                <div class="col-12 col-sm-12 col-md-3 text-center">
+                  <i
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                    class="fa-regular fa-envelope text-white bg-black p-2 rounded-circle my-3"
+                  ></i>
+                  <h1
+                    data-aos="fade-left"
+                    data-aos-delay="1200"
+                    class="text-white fs-1"
+                  >
+                    1,743
+                  </h1>
+                  <p
+                    class="text-white text-capitalize"
+                    data-aos="fade-right"
+                    data-aos-delay="2000"
+                  >
+                    mail-sent
+                  </p>
+                </div>
+                <!-- ! col-4 -->
+                <div class="col-12 col-sm-12 col-md-3 text-center">
+                  <i
+                    data-aos="fade-right"
+                    data-aos-delay="600"
+                    class="fa-solid fa-trophy text-white bg-black p-2 rounded-circle my-3"
+                  ></i>
+                  <h1
+                    data-aos="fade-left"
+                    data-aos-delay="1400"
+                    class="text-white fs-1"
+                  >
+                    17
+                  </h1>
+                  <p
+                    class="text-white text-capitalize"
+                    data-aos="fade-right"
+                    data-aos-delay="2200"
+                  >
+                    award received
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ? Testinomails & skill -->
+    <section id="test-skill" class="overflow-hidden w-100 min-vh-100">
+      <div
+        class="container-fluid d-sm-flex flex-column flex-md-column flex-lg-row flex-xlg-row mt-5"
+      >
+        <!-- ! main-col-1 -->
+        <div
+          class="col-lg-6 col-xlg-6 col-md-12 w-xsm-100 overflow-hidden w-xsm-100"
+        >
+          <!-- ! row-1 -->
+          <div class="row" data-aos="fade-out" data-aos-delay="200">
+            <h2 class="fs-5 text-center py-2 text-uppercase">testinomials</h2>
+            <p class="text-center fs-6 grey text-capitalize lh-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+              quae fugiat voluptatem nisi ipsum saepe ut molestias nulla rem
+              ducimus ex nobis itaque, aliquid, veniam dolor eligendi voluptate
+              officia recusandae.
+            </p>
+          </div>
+          <!-- ! row-2 -->
+          <div class="row mt-5" data-aos="fade-out" data-aos-delay="400">
+            <div
+              class="col-md-4 col-xlg-2 col-lg-2 col-sm-12 d-flex justify-content-sm-center"
+            >
+              <img
+                src="assets/images/skills/skills-01.webp"
+                alt="bad-connection"
+                class="rounded-circle img-fluid m-md-0 m-lg-0 m-xlg-0 m-sm-5 square-img"
+              />
+            </div>
+            <p
+              class="col-md-8 lh-lg col-lg-10 col-xlg-10 w-sm-100 col-sm-12 grey"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              obcaecati quasi ipsa nisi saepe accusamus dolore eaque iure,
+              exercitationem ducimus repudiandae quae nihil ex nostrum quas odio
+              veritatis. Eveniet, exercitationem!
+            </p>
+            <h3
+              class="p-3 fs-6 grey text-capitalize text-end border-bottom-grey"
+            >
+              john doe , ceo
+            </h3>
+          </div>
+          <!-- ! row-3 -->
+          <div class="row mt-5" data-aos="fade-out" data-aos-delay="600">
+            <div
+              class="col-md-4 col-xlg-2 col-lg-2 col-sm-12 d-flex justify-content-sm-center"
+            >
+              <img
+                src="assets/images/skills/skills-02.webp"
+                alt="bad-connection"
+                class="rounded-circle img-fluid m-md-0 m-lg-0 m-xlg-0 m-sm-5 square-img"
+              />
+            </div>
+            <p
+              class="col-md-8 lh-lg col-lg-10 col-xlg-10 w-sm-100 col-sm-12 grey"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              obcaecati quasi ipsa nisi saepe accusamus dolore eaque iure,
+              exercitationem ducimus repudiandae quae nihil ex nostrum quas odio
+              veritatis. Eveniet, exercitationem!
+            </p>
+            <h3
+              class="p-3 fs-6 grey text-capitalize text-end border-bottom-grey"
+            >
+              john doe , ceo
+            </h3>
+          </div>
+        </div>
+        <!-- ! main-col-2 -->
+        <div class="px-5 col-lg-6 col-xlg-6 col-md-12 w-xsm-100">
+          <!-- ! row-1 -->
+          <div class="row" data-aos="fade-out" data-aos-delay="800">
+            <h2 class="fs-5 text-center py-2 text-uppercase">skills</h2>
+            <p class="text-center fs-6 grey text-capitalize lh-lg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+              quae fugiat voluptatem nisi ipsum saepe ut molestias nulla rem
+              ducimus ex nobis itaque, aliquid, veniam dolor eligendi voluptate
+              officia recusandae.
+            </p>
+          </div>
+          <!-- ! row-2 -->
+          <div class="row" data-aos="fade-out" data-aos-delay="1000">
+            <h3 class="text-uppercase fw-bolder fs-4">adobe</h3>
+            <div class="progress selection">
+              <div
+                class="progress-bar"
+                style="width: 100%"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <!-- ! row-3 -->
+          <div class="row my-5" data-aos="fade-out" data-aos-delay="1200">
+            <h3 class="text-uppercase fw-bolder fs-4">html&css</h3>
+            <div class="progress selection">
+              <div
+                class="progress-bar p-0"
+                style="width: 50%"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <!-- ! row-4 -->
+          <div class="row my-5" data-aos="fade-out" data-aos-delay="1400">
+            <h3 class="text-uppercase fw-bolder fs-4">javascript</h3>
+            <div class="progress selection">
+              <div
+                class="progress-bar p-0"
+                style="width: 85%"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <!-- ! row-5 -->
+          <div class="row my-5" data-aos="fade-out" data-aos-delay="1600">
+            <h3 class="text-uppercase fw-bolder fs-4">php</h3>
+            <div class="progress selection">
+              <div
+                class="progress-bar p-0"
+                style="width: 45%"
+                role="progressbar"
+                aria-valuenow="0"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ? info-section -->
+    <section id="qoute" class="w-100 vh-25">
+      <div class="container">
+        <div class="row p-5">
+          <p
+            class="col-12 text-capitalize text-center fs-4"
+            data-aos="fade-out"
+            data-aos-delay="200"
+          >
+            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+            dignissimos aliquam animi eaque."
+          </p>
+          <h2
+            class="text-capitalize text-center fs-1"
+            data-aos="fade-in"
+            data-aos-delay="400"
+          >
+            john doe
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- ? Pricing -->
+    <article class="article w-100">
+      <header data-aos="fade-left" class="article-header">
+        <h1 class="article-title">Pricing Plans</h1>
+      </header>
+      <div class="container w-100">
+        <div class="row g-4">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="100"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="pricing-card main-color">
+              <h3><i class="fas fa-gem price-icon me-2"></i>Starter</h3>
+              <p>Great for individuals starting out.</p>
+              <h4 class="price">$19/month</h4>
+              <ul>
+                <li>✔ 1 Project</li>
+                <li>✔ 5GB Storage</li>
+                <li>✔ Community Support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="pricing-card main-color featured">
+              <h3><i class="fas fa-star price-icon me-2"></i>Professional</h3>
+              <p>For businesses looking to scale.</p>
+              <h4 class="price">$49/month</h4>
+              <ul>
+                <li>✔ 5 Projects</li>
+                <li>✔ 50GB Storage</li>
+                <li>✔ Priority Support</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="pricing-card main-color">
+              <h3><i class="fas fa-crown me-2 price-icon"></i>Enterprise</h3>
+              <p>For large organizations and agencies.</p>
+              <h4 class="price">$99/month</h4>
+              <ul>
+                <li>✔ Unlimited Projects</li>
+                <li>✔ 200GB Storage</li>
+                <li>✔ 24/7 Dedicated Support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- ? pricing -->
+    <section id="pricing w-100 vh-100">
+      <div class="container-fluid flex-column mb-5">
+        <!-- ! main-row-1 -->
+        <div class="row">
+          <!-- ! col-1 -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            class="col-lg-3 col-xlg-4 col-sm-12 col-md-12 my-2 d-flex align-items-center align-items-center justify-content-center"
+          >
+            <div class="card p-5 full-width-mobile w-xsm-100">
+              <div
+                class="col card-header text-uppercase text-center fw-bolder fs-1"
+              >
+                <h1>basic</h1>
+                <p><sup>$</sup> 19 <sub>/ mo</sub></p>
+              </div>
+
+              <ul class="list-group list-group-flush text-capitalize">
+                <li class="list-group-item my-2">feature-1</li>
+                <li class="list-group-item my-2">extra-feature</li>
+                <li class="list-group-item my-2">extra feature-2</li>
+                <li class="list-group-item my-2">feature</li>
+              </ul>
+              <div class="card-body">
+                <div
+                  type="button"
+                  class="btn text-capitalize btn-outline-primary"
+                >
+                  buy now
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ! col-2 -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="400"
+            class="col-lg-3 col-xlg-4 col-sm-12 col-md-12 my-2 d-flex align-items-center align-items-center justify-content-center"
+          >
+            <div class="card p-5 full-width-mobile w-xsm-100">
+              <div
+                class="col card-header text-uppercase text-center fw-bolder fs-1"
+              >
+                <h1>premium</h1>
+                <p><sup>$</sup> 29 <sub>/ mo</sub></p>
+              </div>
+
+              <ul class="list-group list-group-flush text-capitalize">
+                <li class="list-group-item my-2">feature-1</li>
+                <li class="list-group-item my-2">extra-feature</li>
+                <li class="list-group-item my-2">extra feature-2</li>
+                <li class="list-group-item my-2">feature</li>
+              </ul>
+              <div class="card-body">
+                <div
+                  type="button"
+                  class="btn text-capitalize btn-outline-primary"
+                >
+                  buy now
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ! col-3 -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="600"
+            class="col-lg-3 col-xlg-4 col-sm-12 col-md-12 my-2 d-flex align-items-center align-items-center justify-content-center"
+          >
+            <div class="card p-5 full-width-mobile w-xsm-100">
+              <div
+                class="col card-header text-uppercase text-center fw-bolder fs-1"
+              >
+                <h1>pro</h1>
+                <p><sup>$</sup> 39 <sub>/ mo</sub></p>
+              </div>
+
+              <ul class="list-group list-group-flush text-capitalize">
+                <li class="list-group-item my-2">feature-1</li>
+                <li class="list-group-item my-2">extra-feature</li>
+                <li class="list-group-item my-2">extra feature-2</li>
+                <li class="list-group-item my-2">feature</li>
+              </ul>
+              <div class="card-body">
+                <div
+                  type="button"
+                  class="btn text-capitalize btn-outline-primary"
+                >
+                  buy now
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ! col-4 -->
+          <div
+            data-aos="fade-right"
+            data-aos-delay="800"
+            class="col-lg-3 col-xlg-4 col-sm-12 col-md-12 my-2 d-flex align-items-center align-items-center justify-content-center"
+          >
+            <div class="card p-5 full-width-mobile w-xsm-100">
+              <div
+                class="col card-header text-uppercase text-center fw-bolder fs-1"
+              >
+                <h1>platnium</h1>
+                <p><sup>$</sup> 49 <sub>/ mo</sub></p>
+              </div>
+
+              <ul class="list-group list-group-flush text-capitalize">
+                <li class="list-group-item my-2">feature-1</li>
+                <li class="list-group-item my-2">extra-feature</li>
+                <li class="list-group-item my-2">extra feature-2</li>
+                <li class="list-group-item my-2">feature</li>
+              </ul>
+              <div class="card-body">
+                <div
+                  type="button"
+                  class="btn text-capitalize btn-outline-primary"
+                >
+                  buy now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ! main-row-2 -->
+        <div
+          class="row d-flex align-items-center justify-content-center flex-lg-row flex-lg-row flex-md-column flex-xsm-column flex-sm-column"
+        >
+          <div
+            class="col-12 d-flex align-items-center justify-content-center flex-column"
+          >
+            <p class="text-capitalize text-center fw-bolder fs-4">
+              contact us if you have special request
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-primary text-capitalize p-3"
+            >
+              contact us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="msg" class="w-100 vh-25 p-3">
+      <div
+        class="container-fluid p-5 d-lg-flex d-xlg-flex align-items-center justify-content-center"
+      >
+        <div class="col-lg-6 col-md-12 col-xlg-6">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control full-width-mobile p-3 text-white border-white bg-transparent white"
+              placeholder="Your Email"
+              aria-label=""
+            />
+            <button class="btn btn-primary text-uppercase" type="button">
+              subscribe
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <p class="ms-5 p-4 m-sm-5 p-sm-0 text-center text-white lh-lg">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            culpa delectus dolore fuga, eius quo?"
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ? contact-article -->
+    <article class="article w-100">
+      <header data-aos="fade-left" class="article-header">
+        <h1 class="article-title">Contact Us</h1>
+      </header>
+      <div class="container w-100">
+        <div class="row g-4">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="100"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="contact-card main-color">
+              <h3><i class="fas fa-phone-alt price-icon me-2"></i>Phone</h3>
+              <p>Reach us at our support line.</p>
+              <h4 class="price">+1 234 567 890</h4>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="200"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="contact-card main-color featured">
+              <h3><i class="fas fa-envelope price-icon me-2"></i>Email</h3>
+              <p>Send us an email for support.</p>
+              <h4 class="price">support@example.com</h4>
+            </div>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-delay="300"
+            class="col-12 col-md-6 col-lg-4"
+          >
+            <div class="contact-card main-color">
+              <h3>
+                <i class="fas fa-map-marker-alt me-2 price-icon"></i>Address
+              </h3>
+              <p>Visit us at our office.</p>
+              <h4 class="price">123 Example Street, City</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="d-flex align-items-center justify-content-center mt-3">
+        <a href="contact.html" class="btn btn-primary text-capitalize"
+          >contact us</a
+        >
+      </footer>
+    </article>
+    <!-- ! Footer -->
+    <footer class="footer">
+      <div class="container">
+          <img src="/assets/images/logo/logo.png" class="img-fluid" alt="Kasper Logo">
+          <h3 class="mt-3">WE ARE SOCIAL</h3>
+          <div class="footer-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fas fa-home"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <p class="mt-3">&copy; 2025 <strong>Kasper</strong> All Rights Reserved</p>
+      </div>
+  </footer>
+    <!-- Scripts -->
+    <script src="Boostrap/Js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+    <script src="Javascript/main/Master.js"></script>
+    <script src="Javascript/main/Main.js"></script>
+    <script src="Javascript/main/Automation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.js"></script>
+  </body>
+</html>

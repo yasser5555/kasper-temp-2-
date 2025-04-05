@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Css/normalize.Css">
+    <link rel="stylesheet" href="Css/main/main.Css">
+    <link rel="stylesheet" href="Css/main/media&Effect.Css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have a question or want to work together? We'd love to hear from you.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Business Street, City, Country</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 234 567 890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>my867059@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="50" pattern="[A-Za-z\s]+">
+                    <label for="name">Your Name</label>
+                    <span class="error-message">Please enter a valid name (2-50 characters, letters and spaces only)</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Your Email</label>
+                    <span class="error-message">Please enter a valid email address</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" required minlength="5" maxlength="100">
+                    <label for="subject">Subject</label>
+                    <span class="error-message">Subject must be between 5 and 100 characters</span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required minlength="10" maxlength="1000"></textarea>
+                    <label for="message">Your Message</label>
+                    <span class="error-message">Message must be between 10 and 1000 characters</span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                <div id="formMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Form validation and submission
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitBtn = form.querySelector('.submit-btn');
+            const formMessage = document.getElementById('formMessage');
+            
+            // Reset previous error states
+            form.querySelectorAll('.error-message').forEach(error => error.style.display = 'none');
+            form.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+                input.classList.remove('error');
+            });
+
+            // Validate form
+            let isValid = true;
+            const name = form.name.value;
+            const email = form.email.value;
+            const subject = form.subject.value;
+            const message = form.message.value;
+
+            // Name validation
+            if (!/^[A-Za-z\s]{2,50}$/.test(name)) {
+                form.name.classList.add('error');
+                form.name.nextElementSibling.nextElementSibling.style.display = 'block';
+                isValid = false;
+            }
+
+            // Email validation
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                form.email.classList.add('error');
+                form.email.nextElementSibling.nextElementSibling.style.display = 'block';
+                isValid = false;
+            }
+
+            // Subject validation
+            if (subject.length < 5 || subject.length > 100) {
+                form.subject.classList.add('error');
+                form.subject.nextElementSibling.nextElementSibling.style.display = 'block';
+                isValid = false;
+            }
+
+            // Message validation
+            if (message.length < 10 || message.length > 1000) {
+                form.message.classList.add('error');
+                form.message.nextElementSibling.nextElementSibling.style.display = 'block';
+                isValid = false;
+            }
+
+            if (!isValid) {
+                formMessage.textContent = 'Please correct the errors before submitting.';
+                formMessage.className = 'form-message error';
+                return;
+            }
+
+            try {
+                // Disable submit button and show loading state
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>';
+                formMessage.textContent = '';
+                formMessage.className = 'form-message';
+
+                // Get form data
+                const formData = {
+                    name,
+                    email,
+                    subject,
+                    message
+                };
+
+                // Send data to server
+                const response = await fetch('http://localhost:3000/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Show success message
+                    formMessage.textContent = data.message;
+                    formMessage.className = 'form-message success';
+                    form.reset();
+                } else {
+                    // Show error message
+                    formMessage.textContent = data.message;
+                    formMessage.className = 'form-message error';
+                }
+            } catch (error) {
+                // Show error message
+                formMessage.textContent = 'An error occurred. Please try again later.';
+                formMessage.className = 'form-message error';
+            } finally {
+                // Re-enable submit button and restore original content
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+            }
+        });
+
+        // Real-time validation
+        document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+            input.addEventListener('input', () => {
+                const errorMessage = input.nextElementSibling.nextElementSibling;
+                input.classList.remove('error');
+                errorMessage.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html> 

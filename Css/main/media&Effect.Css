@@ -1,0 +1,371 @@
+/*----------------------------------------------
+ * KASPER TEMPLATE - VARIABLES & RESPONSIVE STYLES
+ *----------------------------------------------*/
+
+/*----------------------------------------------
+ * CSS VARIABLES
+ *----------------------------------------------*/
+:root {
+  /* Brand Colors */
+  --main-color: #065c75;
+  --secondary-color: #19c8fa ;
+  --accent-color: black;
+  --white-color: #eee;
+  /* Responsive Widths */
+  --width-xs: 100%;
+  --width-sm: 540px;
+  --width-md: 720px;
+  --width-lg: 960px;
+  --width-xl: 1140px;
+  
+  /* Responsive Heights */
+  --height-xs: auto;
+  --height-sm: auto;
+  --height-md: auto;
+  --height-lg: auto;
+  --height-xl: auto;
+  
+  /* Responsive Font Sizes */
+  --fs-xs: 14px;  /* Extra small text */
+  --fs-sm: 16px;  /* Small text */
+  --fs-md: 18px;  /* Medium text */
+  --fs-lg: 20px;  /* Large text */
+  --fs-xl: 24px;  /* Extra large text */
+  
+  /* Responsive Headings */
+  --h1-xs: 24px;  /* Smallest heading */
+  --h1-sm: 28px;  /* Small heading */
+  --h1-md: 32px;  /* Medium heading */
+  --h1-lg: 36px;  /* Large heading */
+  --h1-xl: 40px;  /* Extra large heading */
+}
+
+/*----------------------------------------------
+ * CUSTOM CLASSES
+ *----------------------------------------------*/
+
+/* Active link styling */
+.active-link {
+  color: black !important;
+  font-weight: 600;
+}
+.active-filter{
+  background-color: black;
+}
+/* Container sizing */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------------------------------
+ * RESPONSIVE STYLES
+ *----------------------------------------------*/
+
+/* Extra Small Devices (phones, less than 600px)
+------------------------------------------------*/
+@media only screen and (max-width: 599px) {
+  /* Update variables for this breakpoint */
+  :root {
+    --fs-xs: 12px;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --h1-xs: 20px;
+    --h1-sm: 22px;
+    --h1-md: 24px;
+    --h1-lg: 26px;
+    --h1-xl: 28px;
+  }
+  
+  /* Navbar adjustments */
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  /* Search form adjustments */
+  .search-form.active {
+    height: 36px;
+  }
+
+  .search-input {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .search-submit {
+    padding: 6px;
+  }
+  
+  /* Carousel adjustments */
+  #mainCarousel, 
+  .carousel-item {
+    height: 92dvh;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 8px;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .carousel-content h2 {
+    font-size: 2rem;
+  }
+  
+  .carousel-content p {
+    font-size: 1rem;
+  }
+  
+  .carousel-content .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .carousel-indicators {
+    bottom: 20px;
+  }
+  
+  .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+  }
+  .h-sm-50 {
+    height: 100% !important;
+  }
+  .flex-xsm-column{
+    flex-direction: column !important;
+  }
+  .square-img{
+    border-radius: 5% !important;
+  }
+  .w-xsm-100{
+    width: 100%;
+  }
+}
+
+/* Small Devices (portrait tablets and large phones, 600px - 767px)
+------------------------------------------------*/
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  /* Update variables for this breakpoint */
+  .full-width-mobile{
+    width: 100%;
+  }
+  :root {
+    --fs-xs: 13px;
+    --fs-sm: 15px;
+    --fs-md: 17px;
+    --fs-lg: 19px;
+    --fs-xl: 22px;
+    --h1-xs: 22px;
+    --h1-sm: 24px;
+    --h1-md: 28px;
+    --h1-lg: 30px;
+    --h1-xl: 34px;
+  }
+  .square-img{
+    border-radius: 5% !important;
+  }
+  /* Carousel adjustments */
+  #mainCarousel, 
+  .carousel-item {
+    height: 92.5dvh;
+  }
+  
+  .carousel-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .carousel-content p {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-content .btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
+/* Medium Devices (landscape tablets, 768px - 991px)
+------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Update variables for this breakpoint */
+  :root {
+    --fs-xs: 14px;
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-lg: 19px;
+    --fs-xl: 22px;
+    --h1-xs: 24px;
+    --h1-sm: 26px;
+    --h1-md: 30px;
+    --h1-lg: 32px;
+    --h1-xl: 36px;
+  }
+  .full-width-mobile{
+    width: 100%;
+  }
+  /* Carousel adjustments */
+  #mainCarousel, 
+  .carousel-item {
+    height: 93vh;
+  }
+  
+  .carousel-content h2 {
+    font-size: 3rem;
+  }
+  
+  .carousel-content p {
+    font-size: 1.3rem;
+  }
+  
+  .carousel-content .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+  .h-md-50 {
+    height: 50% !important;
+  }
+}
+
+/* Large Devices (laptops/desktops, 992px - 1199px)
+------------------------------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Update variables for this breakpoint */
+  :root {
+    --fs-xs: 14px;
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-lg: 20px;
+    --fs-xl: 22px;
+    --h1-xs: 24px;
+    --h1-sm: 28px;
+    --h1-md: 32px;
+    --h1-lg: 34px;
+    --h1-xl: 38px;
+  }
+  
+  /* Search form adjustments */
+  .search-container {
+    position: static;
+  }
+
+  .search-form {
+    position: relative;
+    right: 0;
+    width: 100%;
+    margin-top: 10px;
+    transform: scaleX(1);
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .search-form.active {
+    height: 40px;
+    padding: 5px;
+    opacity: 1;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-form.active .search-input {
+    width: 100%;
+  }
+}
+
+/* Extra Large Devices (large laptops and desktops, 1200px and up)
+------------------------------------------------*/
+@media only screen and (min-width: 1200px) {
+  /* Update variables for this breakpoint */
+  :root {
+    --fs-xs: 14px;
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-lg: 20px;
+    --fs-xl: 24px;
+    --h1-xs: 24px;
+    --h1-sm: 28px;
+    --h1-md: 32px;
+    --h1-lg: 36px;
+    --h1-xl: 40px;
+  }
+  .h-lg-50 {
+    height: 50% !important;
+  }
+}
+
+/* Contact Form Responsive Styles */
+@media only screen and (max-width: 991px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        padding: 2rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-item {
+        gap: 0.8rem;
+    }
+
+    .contact-item i {
+        font-size: 1.3rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-item {
+        gap: 0.5rem;
+    }
+
+    .contact-item i {
+        font-size: 1.2rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
