@@ -967,6 +967,7 @@
     url(/assets/images/about/about-bg.png);
 }
 #about .container-fluid .container {
+height: max-content;
   background-color: var(--main-color);
   min-height: max-content;
 }
